@@ -28,7 +28,7 @@
   
 }
 
-
+/* main style */
 header{
     width: 100%;
  max-width: 1600px;
@@ -79,28 +79,33 @@ nav button {
     width: 85%;
     max-width: 1360px;
     margin: 0px auto;
-    padding: 115px 120px 180px;
+    align-items: center;
+    justify-content: center;
+    padding: 115px 120px 80px;
     
     
 }
-#banner .banner-section{
 
-     align-items: center;
-    
-
-}
-#banner .banner-section h5{
-    max-width: 230px;
+#banner .banner-section button{
+    max-width: 250px;
     font-size: 16px;
     font-weight: 500;
     color: #30b868;
     border: 8px;
     border-radius: 20px;
     background-color: white;
-    padding: 8px 12px 8px 34px;
-    margin: 8px auto 24px;
+    padding: 8px 12px 8px 14px;
+    margin-left: 270px;
+    cursor: pointer;
     
-
+}
+#banner .banner-section .first-btn{
+    
+    margin-left: 300px;
+}
+#banner .banner-button{
+    margin: 0 auto;
+    padding-left: 240px;
 }
 #banner .banner-section h1{
     font-size: 72px;
@@ -123,11 +128,12 @@ nav button {
 #banner .banner-section button{
     max-width: 465px;
     gap: 16px;  
-    align-items: center; 
+    align-items: center;
+    margin: 0 200px;
      
 }
-#banner .banner-section button img{
-    align-items: center;
+#banner .banner-container .btn{
+    margin: 0 auto;
 }
 #banner .banner-container .Secondary-btn{
     font-size: 16px;
@@ -175,9 +181,11 @@ nav button {
 }
 #skills .skills-container{
     width: 85%;
-    max-width: 1360px;
+    mix-width: 1360px;
+    min-width: 1280px;
     margin: 0 auto;
     text-align: center;
+    padding-right: 140px ;
     
 }
 #skills .skills-container h2{
@@ -195,7 +203,8 @@ nav button {
     gap: 20px;
     align-items: center;
     margin-top: 44px;
-    justify-content: ;
+    padding-right: 50px ;
+   
 }
 .skills-box .skill-cards{
     max-width: 322px;
@@ -204,7 +213,7 @@ nav button {
     border: 1px solid white;
     border-radius: 3px;
     max-width: 267px;
-    box-shadow: 0 6px 50px 0 #0000004e ;
+    box-shadow: 0 6px 50px 0 #00000015 ;
     margin-bottom: 16px;
     gap: 16px;
 
@@ -232,7 +241,7 @@ nav button {
     
 }
 #portfolio{
-    margin-top: 100px;
+    padding-top: 100px;
     width: 85%;
     max-width: 1360px;
     display: flex;
@@ -241,12 +250,25 @@ nav button {
     gap: 60px;
 }
 
+
 #portfolio .portfolio-content{
     width: 85% ;
+    display: flex;
     max-width: 1360px;
-    padding: 120px;
+    padding: 100px;
+    gap: 40px;
 }
-
+#portfolio .portfolio-image img{
+    max-width: 500px;
+}
+#portfolio .portfolio-info{
+    
+}
+#portfolio .portfolio-content .portfolio-info{
+    min-width: 540px;
+    
+    
+}
 .portfolio-list li{
     font-size: 16px;
     font-weight: 500;
@@ -254,22 +276,18 @@ nav button {
     padding: 16px;
 
 } 
-.portfolio-list img{
-   
-}
-
 #portfolio .portfolio-content h5{
     font-size: 16px;
     font-weight: 500;
     color: #30b868;
-    margin: 100px auto 16px;
+    margin: 50px auto 16px;
     
 }
 #portfolio .portfolio-content h2{
-    font-size:48px ;
+    font-size: 48px ;
     font-weight: bold;
     margin-bottom: 16px;
-    line-height: 58px;
+    line-height: 48px;
     text-align: left;
     padding-right: 55px ;
 }
@@ -277,8 +295,13 @@ nav button {
     font-size: 16px;
     color: #627382;
     line-height: 20px;
+    padding-right: 60px;
 }
-
+#portfolio .portfolio-list{
+    
+    padding-left: -50px;
+    line-height: 5px;
+}
 #about .about-container{
     width: 85%;
     max-width: 1280px;
@@ -293,8 +316,8 @@ nav button {
     text-align: center;
 }
 #about{
-    margin: 100px auto;
-    padding: ;
+    margin-bottom: 100px;
+       
 }
 #about .about-container h2{
     font-size: 40px;
@@ -318,7 +341,6 @@ nav button {
     font-weight: 400;
     color: #627382;
 }
-
 .footer-section{
     background: #001036;
     padding-top: 100px ;
@@ -351,12 +373,12 @@ nav button {
 }
 .social-icons{
     display: flex;
-    gap: 10px;
+    gap: 15px;
     
 }
 .social-icons a{
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     background-color: white;
     border-radius: 50%;
 }
